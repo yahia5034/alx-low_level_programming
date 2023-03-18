@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+/**
  *main -Prints the size of the different varaibles
  *Return :Always 0.
  */
