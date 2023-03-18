@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- *main -Prints the size of the different varaibles
- *Return :Always 0.
+ *main - Prints the size of the different varaibles
+ *Return:Always 0.
  */
 int main(void)
 {
