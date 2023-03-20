@@ -1,7 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /* more headers goes there */
-
+/**
+ *main - check if the number is +ve or -ve or zero
+ *Return - Always 0.
+ */
 /* betty style doc for function main goes there */
 int main(void)
 {
