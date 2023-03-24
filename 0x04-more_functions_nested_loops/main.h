@@ -1,6 +1,6 @@
-#ifndef "main.h"
-#define "main.h"
+#ifndef _main_H_
+#define _main_H_
 
-int _isupper(int c);
+int _isupper(char c);
 
 #endif
