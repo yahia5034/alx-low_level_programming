@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  *_isdigit - checks if the entered character is a digit or not
- *@c: input 
- *Return: 1 if digit , 0 otherwise 
+ *@c: input
+ * Return: 1 if digit, 0 otherwise.
  */
 int _isdigit(int c)
 {
@@ -10,5 +10,5 @@ int _isdigit(int c)
 	{
 		return (1);
 	}
-	return 0;
+	return (0);
 }
