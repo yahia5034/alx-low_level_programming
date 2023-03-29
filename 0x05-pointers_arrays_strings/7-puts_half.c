@@ -12,7 +12,11 @@ void puts_half(char *str)
 	while (str[c] != '\0')
 		c++;
 	n = (c - 1) / 2;
-	for (i = n+1; i < n*n; i++)
+	i = c / 2;
+	while (n--)
+	{	
 		_putchar(str[i]);
+		i++;
+	}
 	_putchar('\n');
 }
