@@ -18,9 +18,8 @@ void rev_string(char *s)
 	count--;
 	for (i = 0 ; count != i && i < count; i++, count--)
 	{
-		temp = *(s+i);
-		*(s+i) = *(s+count);
-		*(s+count) = temp;
+		temp = *(s + i);
+		*(s + i) = *(s + count);
+		*(s + count) = temp;
 	}
-	
 }
