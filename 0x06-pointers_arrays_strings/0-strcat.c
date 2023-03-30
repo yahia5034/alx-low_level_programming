@@ -3,7 +3,7 @@
 /**
  * *_strcat - function that concatenate two strings
  * @dest: the output
- * @src: first string 
+ * @src: first string
  * Return: point to resuting string
  */
 
