@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _puts_recursion - prints a string, followed by a new line.
+ * _print_rev_recursion - prints a reversed string.
  * @s: string
  * Return: no return.
 */
