@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - print a number, followed by a new line
+ * main - print res of mul, followed by a new line
  * @argc: int
  * @argv: list
  * Return: 0 if all ok ,else 1.
