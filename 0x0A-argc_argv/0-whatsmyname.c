@@ -2,8 +2,8 @@
 
 /**
  * main - print first name followed by new line
- * @argc - int
- * @argv = list
+ * @argc: int
+ * @argv: list
  * Return: 0.
  */
 
