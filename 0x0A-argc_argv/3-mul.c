@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - print a number, followed by a new line
@@ -7,7 +8,7 @@
  * Return: 0 if all ok ,else 1.
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	if (argc != 3)
 	{
