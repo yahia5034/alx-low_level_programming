@@ -22,14 +22,14 @@ int _strlength(char *s)
 char *argstostr(int ac, char **av)
 {
 	char *s;
-	int k, i = 0, j = 0, cnt = 0;
+	int k = 0, i = 0, j = 0, cnt = 0;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
 	for (; i < ac; i++, k++)
 		k += _strlength(av[i]);
 	s = malloc(sizeof(char) * k + 1);
-	if (s == NULL)
+	if (s == 0)
 		return (NULL);
 
 	for (i = 0; i < ac; i++)
