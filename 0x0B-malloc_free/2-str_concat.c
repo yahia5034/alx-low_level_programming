@@ -12,9 +12,10 @@ char *str_concat(char *s1, char *s2)
 	char *n;
 	int x1, x2;
 
-	if (s1 == NULL || s2 == NULL)
-		return (NULL);
-
+	if (s1 == NULL)
+		s1 = '\0';
+	if (s2 == NULL)
+		s2 = '\0';
 	while (s1[n1] != 0)
 		n1++;
 	while (s2[n2] != 0)
@@ -25,6 +26,7 @@ char *str_concat(char *s1, char *s2)
 	x2 = n2;
 	if (n == NULL)
 		return (n);
+
 	while (x1--)
 		n[x1] = s1[x1];
 	while (x2--)
