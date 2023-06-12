@@ -19,7 +19,7 @@ int _strlength(char *s)
  *
  * Return: pointer of an array of char
  */
- char *argstostr(int ac, char **av)
+char *argstostr(int ac, char **av)
 {
 	int *s, k, i = 0, j = 0, cnt = 0;
 
@@ -27,7 +27,7 @@ int _strlength(char *s)
 		return (NULL);
 	for (; i < ac; i++, k++)
 		k += _strlength(av[i]);
-	s = malloc(size(char) * k + 1);
+	s = malloc(sizeof(char) * k + 1);
 	if (s == NULL)
 		return (NULL);
 
