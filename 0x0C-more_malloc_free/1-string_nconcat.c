@@ -5,8 +5,9 @@
  * @s1: string
  * @s2: string
  * @n: number of bytes
- * Return: new pointer or null;
+ * Return: new pointer or null.
  */
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *p;
@@ -20,12 +21,17 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		;
 	for (s2_ln = 0; s2[s2_ln] != '\0'; s2_ln++)
 		;
-	p = malloc(s1_ln + s2_ln + 1);
+
+	p = malloc(s1_ln + n + 1);
+	
 	if (p == 0)
 		return (NULL);
-	for (k = 0; k < s1_ln; k++)
-		p[k] = s1[k];
-	for (i = 0; i < n; i++, k++)
-		p[k] = s2[i];
-	return p;
+	
+	for (i = 0; i < s1_ln; i++)
+		p[i] = s1[i];
+	for (k = 0; i < n; i++, k++)
+		p[i] = s2[k];
+	
+	p[i] = '\0';
+	return (p);
 }
