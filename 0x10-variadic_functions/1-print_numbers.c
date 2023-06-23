@@ -10,11 +10,11 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list p;
-
-	va_start(p, int);
+	int i = n;
+	va_start(p, n);
 	if (separator == NULL)
 		separator = "";
-	while (n--)
+	while (i--)
 		printf("%d%s", va_arg(p, int), separator);
 	va_end(p);
 	printf("\n");
